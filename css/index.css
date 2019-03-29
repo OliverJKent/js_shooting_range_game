@@ -1,0 +1,77 @@
+#body {
+  z-index: 1
+}
+
+.gameArea {
+  height: 580px;
+  width: 790px;
+  background-image: url("../images/background.png");
+  background-size: contain;
+  text-align: center;
+  margin: auto;
+  cursor: crosshair;
+  font-family: "Impact";
+  color: black;
+  text-shadow:
+  -1px -1px 0 white,
+  1px -1px 0 white,
+  -1px 1px 0 white,
+  1px 1px 0 white;
+  z-index: 2;
+}
+
+.targets {
+  height: 100px;
+  width: 100px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  opacity:0;
+  transition: opacity 0.5s;
+  border-radius: 100px;
+}
+
+#instructions {
+  font-size: 30px;
+
+  margin-top: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
+  background-color: lightgrey;
+  color: blue;
+}
+
+.buttons {
+    background-color: black;
+    border: solid;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.buttons:hover {
+    font-size: 20px;
+}
+
+#menuButton {
+  text-align: right;
+  margin-right: 25px;
+}
+
+#behind {
+  text-align: left;
+}
+
+#bird {
+  width: 80px;
+  height: 45px;
+  opacity:0;
+  transition: opacity 1s;
+  margin-left: 0px;
+  transition: margin-left 10s;
+  animation-timing-function: linear;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Shooting Range</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <div class="gameArea" id='gameArea'>
+      <div class='container'>
+        <div class='row'>
+          <div class=col-3>
+            <h4 id='highScoreDisplay'>Highscore = <span id="highestScore"></span></h4>
+          </div>
+          <div class=col-3>
+            <h4 id='scoreDisplay'>Score = <span id="score">0</span></h4>
+          </div>
+          <div class=col-3>
+            <h4 id='redFlash'>Ammo: <span id="ammo">8</span></h4>
+          </div>
+          <div class='col-3'>
+            <h4 id='remaining'>Time Remaining: <span id="countdown">30</span></h4>
+          </div>
+        </div>
+      </div>
+      <div id='behind'>
+        <img id='bird' src="images/bird.gif" alt="Flying bird">
+      </div>
+      <div id='targetDiv1'>
+        <img class="targets" data-num="0" src="images/target.png" alt="target">
+        <img class="targets" data-num="1" src="images/target.png" alt="target">
+        <img class="targets" data-num="2" src="images/target.png" alt="target">
+        <img class="targets" data-num="3" src="images/target.png" alt="target">
+        <img class="targets" data-num="4" src="images/target.png" alt="target">
+      </div>
+      <div id='targetDiv2'>
+        <img class="targets" data-num="5" src="images/target.png" alt="target">
+        <img class="targets" data-num="6" src="images/target.png" alt="target">
+        <img class="targets" data-num="7" src="images/target.png" alt="target">
+        <img class="targets" data-num="8" src="images/target.png" alt="target">
+        <img class="targets" data-num="9" src="images/target.png" alt="target">
+    </div>
+      <div id='targetDiv3'>
+        <img class="targets" data-num="10" src="images/target.png" alt="target">
+        <img class="targets" data-num="11" src="images/target.png" alt="target">
+        <img class="targets" data-num="12" src="images/target.png" alt="target">
+        <img class="targets" data-num="13" src="images/target.png" alt="target">
+        <img class="targets" data-num="14" src="images/target.png" alt="target">
+      </div>
+      <form id='menuButton' action='index.html'>
+        <input class="buttons" type="submit" value="Menu"/>
+      </form>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" async></script>
+    <script src = "js/game.js" async></script>
+  </body>
+</html>

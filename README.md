@@ -1,0 +1,1 @@
+# sparta_global_game_week
